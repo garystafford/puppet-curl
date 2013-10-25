@@ -1,4 +1,4 @@
-name          'element84-curl'
+name          'mhuffnagle-curl'
 version       '0.0.1'
 source        'https://github.com/Element84/puppet-curl'
 author        'element84'
