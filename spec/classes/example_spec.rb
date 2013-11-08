@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'curl' do
   context 'supported operating systems' do
-    ['Amazon', 'Debian', 'RedHat'].each do |osfamily|
+    ['Amazon', 'Debian', 'RedHat', 'Solaris'].each do |osfamily|
       describe "curl class without any parameters on #{osfamily}" do
         let(:params) {{ }}
         let(:facts) {{
@@ -16,13 +16,13 @@ describe 'curl' do
   end
 
   context 'unsupported operating system' do
-    describe 'curl class without any parameters on Solaris/Nexenta' do
+    describe 'curl class without any parameters on Mandrake/Mandrake' do
       let(:facts) {{
-        :osfamily        => 'Solaris',
-        :operatingsystem => 'Nexenta',
+        :osfamily        => 'Mandrake',
+        :operatingsystem => 'MandrivaMandriva',
       }}
 
-      it { expect { should }.to raise_error(Puppet::Error, /Nexenta not supported/) }
+      it { expect { should }.to raise_error(Puppet::Error, /Mandriva not supported/) }
     end
   end
 end
