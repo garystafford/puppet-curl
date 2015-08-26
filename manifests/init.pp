@@ -7,10 +7,9 @@
 #
 # There are no parameters at this time.
 #
-class curl (
-) inherits curl::params {
-
+class curl () inherits curl::params {
   # validate parameters here
 
-  class { 'curl::install': } -> Class['curl']
+  class { 'curl::install':
+  } -> Class['curl']
 }

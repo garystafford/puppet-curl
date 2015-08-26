@@ -1,0 +1,31 @@
+{
+  "author": "element84",
+  "dependencies": [],
+  "summary": "A simple module for installing curl. Originally, based on mhuffnagle-curl",
+  "license": "Apache License, Version 2.0",
+  "name": "garystafford-curl",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "12.04",
+        "15.04"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    }
+  ],
+  "project_page": "https://github.com/garystafford/puppet-curl",
+  "requirements": [],
+  "source": "https://github.com/garystafford/puppet-curl.git",
+  "tags": [
+    "curl"
+  ],
+  "version": "0.1.0"
+}
